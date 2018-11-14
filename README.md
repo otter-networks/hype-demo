@@ -3,12 +3,16 @@ This excercise will get you up and running with a basic application on the Googl
 
 Once you have a working Google Cloud account attached to a Project; open the following URL [https://console.cloud.google.com/home/dashboard?project=hype-de-workshop](https://console.cloud.google.com/home/dashboard?project=hype-de-workshop)
 
-In the top right hand corner you should see a button that looks like `>_`. Click it and a terminal will open in the browser.
+In the top right hand corner you should see a button that looks like `>_`. Click it and a "Cloud Shell" terminal will open in the browser.
 
-git clone https://github.com/emilyrmeads/hype-demo.git
+Clone the repo into the cloud shell environment and go into the directory.
+`git clone https://github.com/otter-networks/hype-demo.git; cd hype-demo`
 
-docker build -t gcr.io/$DEVSHELL_PROJECT_ID/$USER:master .
-docker push gcr.io/$DEVSHELL_PROJECT_ID/$USER:master
+We can now build the application into a Docker container. We have used some environment variables to make this easier.
+`docker build -t gcr.io/$DEVSHELL_PROJECT_ID/$USER:master .`
+
+We push the docker container into the 
+`docker push gcr.io/$DEVSHELL_PROJECT_ID/$USER:master`
 gcloud container clusters get-credentials standard-cluster-1 --zone europe-west1-c --project hype-de-workshop
 kubectl create namespace $USER
 cat k8s/deployment.yaml | envsubst | kubectl apply -f -

@@ -5,7 +5,7 @@ Once you have a working Google Cloud account attached to a Project; open the fol
 
 In the top right hand corner you should see a button that looks like `>_`. Click it and a "Cloud Shell" terminal will open in the browser.
 
-#Docker
+# Docker
 
 Clone the repo into the cloud shell environment and go into the directory.
 
@@ -38,7 +38,7 @@ docker push gcr.io/$DEVSHELL_PROJECT_ID/$USER:master
 
 We can see our image in the GCR here: [https://console.cloud.google.com/gcr/images/hype-de-workshop/](https://console.cloud.google.com/gcr/images/hype-de-workshop/)
 
-#Kubernetes 
+# Kubernetes 
 
 Now that we have a working docker image we can deploy this application to Kubernetes.
 

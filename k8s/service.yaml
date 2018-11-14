@@ -13,5 +13,5 @@ spec:
     protocol: TCP
     targetPort: 8080
   selector:
-    app: our-first-service
+    app: our-first-deploy
     #tier: web

@@ -11,7 +11,7 @@ items:
       kubernetes.io/ingress.class: "nginx"
   spec:
     rules:
-    - host: www.otter.ly
+    - host: $USER.otternetwork.org
       http:
         paths:
         - backend:

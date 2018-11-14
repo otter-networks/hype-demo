@@ -4,8 +4,7 @@ kind: List
 items:
 - apiVersion: extensions/v1beta1
   kind: Ingress
-  metadata:
-    namespace: playground-ns 
+  metadata: 
     name: staging-ingress
     annotations:
       kubernetes.io/ingress.class: "nginx"

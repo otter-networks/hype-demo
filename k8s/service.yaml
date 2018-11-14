@@ -3,7 +3,6 @@ apiVersion: v1
 kind: Service
 metadata:
   name: our-first-service
-  namespace: playground-ns
   labels:
     app: our-first-service
 spec:

@@ -3,7 +3,6 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: our-first-deploy
-  namespace: playground-ns
   labels:
     app: our-first-deploy
 spec:

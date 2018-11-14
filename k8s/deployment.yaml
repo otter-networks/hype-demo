@@ -17,7 +17,7 @@ spec:
     spec: 
       containers:
         - name: our-first-deploy
-          image: gcr.io/erms-sandpit/helloapp:hihello
+          image: gcr.io/$DEVSHELL_PROJECT_ID/$USER:master
           imagePullPolicy: Always
           #envFrom:
           #- configMapRef:
